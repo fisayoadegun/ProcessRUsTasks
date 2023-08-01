@@ -18,7 +18,7 @@ namespace ProcessRUsTasks.Services
             _configuration = configuration;
             _userService = userService;
         }
-        public DateTime ExpirationTime => DateTime.Now.AddMinutes(300);
+        public DateTime ExpirationTime => DateTime.Now.AddHours(1);
 
         public string GenerateJwtAccessToken(IEnumerable<Claim> claims)
         {

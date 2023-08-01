@@ -56,7 +56,7 @@ namespace ProcessRUsTasks.Controllers
                 Id = user.Id,
                 Token = accessToken,
                 Email = user.Email,
-                Roles = await _userService.GetUserRoles(user)
+                Roles = await _userService.GetUserRoles(user),                
             };
 
             return Ok(response);

@@ -27,7 +27,7 @@ namespace ProcessRUsTasks.Services
             var result = await _userManager.CreateAsync(user, password);            
         }
 
-        public  async Task<ApplicationUser> GetUserByEmail(string email)
+        public async Task<ApplicationUser> GetUserByEmail(string email)
         {
            return await _userManager.FindByEmailAsync(email);
         }
